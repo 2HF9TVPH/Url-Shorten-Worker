@@ -20,7 +20,7 @@ let res
 	document.getElementById("searchbtn").innerHTML=' Kürzen';
     if(res.key!=="")
     document.getElementById("result").innerHTML=window.location.origin+res.key;
-    $('#exampleModal').modal('show')
+    $('#exampleModal').modal('anzeigen')
   }).catch(function(err){alert("Unbekannter Fehler. Bitte versuchen Sie es erneut!");
   console.log(err);
   document.getElementById("searchbtn").disabled=false;
