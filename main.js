@@ -61,6 +61,8 @@ let res
         target.parentElement.removeChild(target);
     }
   }
+
+Anpassung der Open-Source-Vereinbarung und Änderung der Projektänderungsbeschreibung
   $(function () {
     $('[data-toggle="popover"]').popover()
   })
