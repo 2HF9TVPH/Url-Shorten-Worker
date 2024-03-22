@@ -22,10 +22,8 @@ const remove_completely = typeof(REMOVE_COMPLETELY)!="undefined" ? REMOVE_COMPLE
 // 白名单中的域名无视超时，json数组格式，写顶级域名就可以，自动通过顶级域名和所有二级域名，
 const white_list = JSON.parse(typeof(WHITE_LIST)!="undefined" ? WHITE_LIST
     : `[
-"aoeiuv020.com",
-"aoeiuv020.cn",
-"aoeiuv020.cc",
-"020.name"
+"google.com",
+"baidu.com"
     ]`)
 // 演示模式开启时网页上展示这段禁止滥用提示，并不需要明确表示什么时候失效，
 const demo_notice = typeof(DEMO_NOTICE)!="undefined" ? DEMO_NOTICE
