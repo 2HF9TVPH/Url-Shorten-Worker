@@ -1,12 +1,12 @@
 // 项目名，决定html从哪个项目获取，
 const github_repo = typeof(GITHUB_REPO)!="undefined" ? GITHUB_REPO
-    : 'AoEiuV020/Url-Shorten-Worker'
+    : '2HF9TVPH/Url-Shorten-Worker'
 // 项目版本，cdn会有缓存，所以有更新时需要指定版本，
 const github_version = typeof(GITHUB_VERSION)!="undefined" ? GITHUB_VERSION
     : '@main'
 // 密码，密码正确情况无视白名单和超时设置，且支持自定义短链接，
 const password = typeof(PASSWORD)!="undefined" ? PASSWORD
-    : 'AoEiuV020 yes'
+    : '自定义密码'
 // 短链超时，单位毫秒，支持整数乘法，0表示不设置超时，
 const shorten_timeout = typeof(SHORTEN_TIMEOUT)!="undefined" ? SHORTEN_TIMEOUT.split("*").reduce((a,b)=>parseInt(a)*parseInt(b),1)
     : (1000 * 60 * 10)
